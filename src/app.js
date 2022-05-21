@@ -20,4 +20,5 @@ window.onload = function() {
     }
   }
   domainGenerator();
+  document.querySelector("#domain-generator").innerHTML = domainGenerator();
 };
