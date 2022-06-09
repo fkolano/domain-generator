@@ -5,20 +5,19 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  function domainGenerator() {
-    let pronoun = ["the", "our"];
-    let adj = ["great", "big"];
-    let noun = ["jogger", "racoon"];
+window.onload = () => {
+  let pronoun = ["the", "our"];
+  let adj = ["great", "big"];
+  let noun = ["jogger", "racoon"];
 
-    for (let i = 0; i < pronoun.length; i++) {
-      for (let j = 0; j < noun.length; j++) {
-        for (let p = 0; p < adj.length; p++) {
-          console.log(`${pronoun[i]}${noun[j]}${adj[p]}.com`);
-        }
+  for (let a = 0; a < pronoun.length; a++) {
+    for (let b = 0; b < adj.length; b++) {
+      for (let c = 0; c < noun.length; c++) {
+        console.log(pronoun[a] + adj[b] + noun[c] + "com");
       }
     }
   }
-  domainGenerator();
-  document.querySelector("#domain-generator").innerHTML = domainGenerator();
+  console.log("Hello Frank from the console!");
 };
+
+//document.querySelector("#domain-generator").innerHTML = domainGenerator();
